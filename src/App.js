@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Client from "./pages/Clientpage";
+import Users from "./pages/Userpage";
+import Nav from "./components/Nav";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      pageHandler: "Client",
+    };
+  }
+  pageChange(page) {
+    this.setState({
+      ...this.state,
+      pageHandler: page,
+    });
+  }
+
+  render() {
+    console.log(this.state.pageHandler);
+    return (
+      <>
+        <Nav pageChange={(e) => this.pageChange(e)} />
+        {this.state.pageHandler === "Client" ? <Client /> : <></>}
+        {/* <Homepage /> */}
+        {this.state.pageHandler === "User" ? <Users /> : <></>}
+      </>
+    );
+  }
 }
 
 export default App;

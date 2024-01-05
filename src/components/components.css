@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.narBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 30px;
+    flex-wrap: wrap;
+
+}
+.tages a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+.tages a:hover{
+    border-bottom: 2px solid #ba54f5;
+}
+.last-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.last-section img{
+    width: 30px;
+    border-radius: 20px;
+}
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    height: 250px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container-section{
+    background-color: #fff;
+    width: 70%;
+    box-shadow: 0 1px 20px rgba(0,0,0,.1);
+    margin: 20px auto auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+  .bg{
+background-color: #fff;  }
+.bg h2{
+     background-color: #fff;  }
+  .container-section button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ba54f5;
+    color: white;
+  }
+  .inputFields {
+    background-color: pink;    
+  }
+  .container-section2{
+    background-color: #fff;
+    width: 70%;
+    box-shadow: 0 1px 20px rgba(0,0,0,.1);
+    margin: 50px auto auto;
+    padding: 20px;
+  
+  }
+  .userInputFields{
+      display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+
+  }
+  .userInputFields input {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgba(0,0,0,.1);
+    outline: none;
+  }
+  .userInputFields select{
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgba(0,0,0,.1);
+    outline: none;
+  }
+  .bg button{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ba54f5;
+    color: white;
+    margin: 10px;
+  }
+  #cancelBtn{
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+  }
+  .ClientsData {
+    background-color: #fff;
+    width: 70%;
+    box-shadow: 0 1px 20px rgba(0,0,0,.1);
+    margin: 20px auto auto;
+    padding: 20px;
+}
+.ClientsData table{
+    width: 100%;
+}
+.ClientsData td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .actionIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .actionIcon img{
+    width: 20px;
+  }
+  /* .actionIcon a{
+    border: none;
+  } */
+  .editFrom{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: white;
+    max-width: 30%;
+    top: 50%;
+    bottom: 10%;
+    text-align: center;
+    margin: auto;
+  }
+  .editFrom h2{
+    background-color: #ba54f5;
+    color: white;
+    padding: 20px;
+    border-radius:10px ;
+  }
+  .editInputFields{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 25px;
+    margin: 20px;
+    background-color: white;
+  }
+  .editInputFields input{
+    padding: 10px;
+    border: 1px solid rgb(103, 97, 97);
+    outline: none;
+    background-color: white;
+  }
+  .editInputFields select{
+   
+    padding: 10px;
+    border: 1px solid rgb(103, 97, 97);
+    outline: none;
+    background-color: white;
+  }
+  .ClientsSearch{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px
+  }
+  .ClientsSearch input{
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(82, 78, 78);
+    outline: none;
+  }
